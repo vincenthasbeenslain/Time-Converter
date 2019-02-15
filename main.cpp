@@ -1,10 +1,8 @@
-/** Vincent Nguyen
-    October 10, 2018
-    This program:
-    1. Asks the user for their name.
-    2. Welcomes the user.
-    3. Asks the user to input a length of time in seconds.
-    4. Outputs that number in hours, minutes, and seconds. */
+/* Vincent Nguyen
+    February 15, 2019
+    This program asks the user to input their name, greets them, asks for a time
+    measurement in seconds, and output that time measurement in hours, minutes, and seconds. 
+*/
 
 
 #include <iostream>
@@ -17,7 +15,7 @@ int main()
     cout << "Please enter your name: ";
     cin >> firstName;
 
-    cout << "Welcome to the program, " << firstName << '!' << endl;
+    cout << "Hi " << firstName << ", welcome to my program!" << endl;
 
     int totalSeconds;
     cout << "Enter a time in seconds: ";
@@ -37,12 +35,10 @@ int main()
 
     cout << totalSeconds << " seconds is equivalent to " << hours << " hours, "
     << minutes << " minutes, and " << seconds << " seconds.";
-
-    return 0;
 }
 
 /** sample run:
     Please enter your name: Vincent
-    Welcome to the program, Vincent!
+    Hi Vincent, welcome to my program!
     Enter a time in seconds: 14529
     14529 seconds is equivalent to 4 hours, 2 minutes, and 9 seconds. */
